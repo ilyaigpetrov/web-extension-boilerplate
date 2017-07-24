@@ -37,14 +37,17 @@ module.exports = (env, ...flags) => Object.assign(
   },
 
   plugins: [
+    // Copy all except sources and tests (TODO: no tests yet).
     new CopyWebpackPlugin([
       {
-        from: './src/**/*',
+        context: './src',
+        from: './**/*',
       },
     ], {
       ignore: [
-        './src/**/src',
-        './src/**/src/**',
+        '**/src/**',
+        'index.js',
+        'index.jsx',
       ],
     }),
     ...(env === 'prod' ? [
