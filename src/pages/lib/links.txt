@@ -1,0 +1,2 @@
+ChromeStyle: https://cs.chromium.org/chromium/src/extensions/renderer/resources/extension.css
+https://github.com/jslegers/emoji-icon-font
