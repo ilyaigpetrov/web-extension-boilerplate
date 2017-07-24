@@ -74,3 +74,7 @@ https://github.com/gajus/eslint-plugin-flowtype
 ## Scripts
 
 32. `npm install --save-dev forever`
+
+## Building
+
+33. `npm install --save-dev copy-webpack-plugin`

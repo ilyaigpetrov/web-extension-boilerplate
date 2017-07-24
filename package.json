@@ -23,6 +23,7 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babili-webpack-plugin": "^0.1.2",
+    "copy-webpack-plugin": "^4.0.1",
     "eslint": "^4.3.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-loader": "^1.9.0",

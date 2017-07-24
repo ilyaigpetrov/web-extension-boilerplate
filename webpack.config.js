@@ -2,6 +2,7 @@
 
 const path = require('path');
 const BabiliPlugin = require('babili-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (env, ...flags) => Object.assign(
 {
@@ -34,17 +35,35 @@ module.exports = (env, ...flags) => Object.assign(
     ],
 
   },
+
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: './src/**/*',
+      },
+    ], {
+      ignore: [
+        './src/**/src',
+        './src/**/src/**',
+      ],
+    }),
+    ...(env === 'prod' ? [
+      // Production Plugins
+
+      new BabiliPlugin(),
+    ] : [
+      // Development Plugins
+
+    ])
+  ],
+
 }, env === 'prod' ? {
 
-    // Production
-
-    plugins: [
-      new BabiliPlugin(),
-    ],
+    // Production Props
 
   } : {
 
-    // Development
+    // Development Props
 
     devtool: 'source-map',
 
