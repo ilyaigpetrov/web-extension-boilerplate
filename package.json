@@ -5,6 +5,15 @@
   "scripts": {},
   "author": "Homer J. Simpson <homerjsimpson@example.com>, (https://homerjsimpson.example.com)",
   "license": "GPLv3",
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-flow": "^6.23.0",
+    "babili-webpack-plugin": "^0.1.2",
+    "flow-bin": "^0.51.0",
+    "flow-interfaces-chrome": "^0.3.1",
+    "webpack": "^3.3.0"
+  },
   "dependencies": {}
 }
