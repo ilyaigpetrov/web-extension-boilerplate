@@ -1,0 +1,10 @@
+{
+  "name": "web-extension-boilerplate",
+  "version": "0.0.1",
+  "description": "Foundation for web extension with React, Redux, ESLint, etc.",
+  "scripts": {},
+  "author": "Homer J. Simpson <homerjsimpson@example.com>, (https://homerjsimpson.example.com)",
+  "license": "GPLv3",
+  "devDependencies": {},
+  "dependencies": {}
+}
