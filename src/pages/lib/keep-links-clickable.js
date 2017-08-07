@@ -1,4 +1,6 @@
+/*eslint-disable*/
 'use strict';
+
 /*
 In popup links are not clickable at all, fix it.
 On other pages "chrome://" links are not clickable, fix it.
