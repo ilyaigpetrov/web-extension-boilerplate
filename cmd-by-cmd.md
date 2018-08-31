@@ -52,7 +52,7 @@ https://flow.org/en/docs/tools/babel/
 
 https://facebook.github.io/react/docs/installation.html
 
-22. `npm install --save-dev babel-preset-reactbabel-preset-react`
+22. `npm install --save-dev babel-preset-react babel-preset-react`
 23. `npm install --save react react-dom`
 24. `npm install --save history react-router react-router-dom`
 
